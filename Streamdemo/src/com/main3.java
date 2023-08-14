@@ -8,7 +8,7 @@ package com;
 	    public static void main(String[] args) {
 	        Stream<Long> primeStream = Stream.generate(new PrimeGenerator());
 
-	        primeStream.limit(10)  // Limit to the first 10 prime numbers
+	        primeStream.limit(10)  
 	                .forEach(System.out::println);
 	    }
 
